@@ -1,0 +1,266 @@
+body
+{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato';
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+img
+{
+    width: 100%;
+}
+
+.brand
+{
+    text-align: center;
+    font-weight: 500;
+}
+
+.navbar
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    padding: 20px;
+}
+
+.navbar ul
+{
+    list-style: none;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.navbar li 
+{
+    text-align: center;
+}
+
+.navbar a 
+{
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar li:hover a
+{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #008CBA;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+}
+
+.photo
+{
+    display: grid;
+    place-content: center;    
+}
+
+.photo img
+{
+    max-width: 350px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.desc
+{
+    display: grid;
+    text-align: center;
+}
+
+.desc p
+{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.skills
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.title
+{
+    grid-column: 1/-1;
+    padding: 5px;
+    border-bottom: 1px solid #222222;
+    color: #008CBA;
+}
+
+.box
+{
+    display: grid;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    height: 210px;
+    width: 250px;
+    place-content: center;
+}
+
+.img 
+{
+    width: 250px;
+    height: 150px;
+}
+
+.html img 
+{
+    width: 240px;
+    height: 130px;
+}
+
+.php img
+{
+    width: 140px;
+}
+
+.js img 
+{
+    width: 100px;
+    margin-top: 20px;
+}
+
+.css img
+{
+    transform: rotate(180deg);
+}
+
+.portofolio
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.project
+{
+    position: relative;
+}
+
+.project::before
+{
+    content: none;
+    text-align: center;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #222222;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.text
+{
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.project:hover:after,.project:hover .overlay {
+    opacity:0.8;
+}
+
+.button
+{
+    display: relative;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #008CBA;
+}
+
+.contact
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.sub
+{
+
+    grid-column: 1/-1;
+    padding: 5px;
+    color: #008CBA;
+    text-align: center;
+}
+
+.github
+{
+    display: grid;
+    place-content: center;
+    background-color: #222222;
+    padding-bottom: 20px;
+}
+
+.github img
+{
+    max-width: 200px;
+}
+
+.linkedin img
+{
+    max-width: 150px;
+}
+
+.linkedin
+{
+    display: grid;
+    place-content: center;
+    background-color: #008CBA;
+}
+
+#button-linkedin
+{
+    margin-top: 30px;
+    background-color: #222222;
+}
+
+.footer
+{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #008CBA;
+    padding: 12px;
+}
