@@ -5,7 +5,7 @@ body
     font-family: 'Lato';
     padding: 0;
     font-family: 'Montserrat';
-    background: linear-gradient(#fff 52%,#222222 41%);
+    background: linear-gradient(#fff 50%,#222222 40%);
 }
 
 html
@@ -289,7 +289,7 @@ img
 {
     body
     {
-        background: linear-gradient(#fff 43%,#222222 43%);
+        background: linear-gradient(#fff 40%,#222222 40%);
     }
 
 
@@ -320,7 +320,7 @@ img
     
     body
     {
-        background: linear-gradient(#fff 48%,#222222 48% );
+        background: linear-gradient(#fff 45.5%,#222222 45.5% );
     }
 
     .portofolio
@@ -350,7 +350,7 @@ img
 
     body
     {
-        background: linear-gradient(#fff 66%,#222222 66% );
+        background: linear-gradient(#fff 64%,#222222 64% );
     }
 
     .skills
