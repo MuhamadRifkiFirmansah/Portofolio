@@ -8,8 +8,6 @@ body
     background: linear-gradient(#fff 50%,#222222 40%);
 }
 
-
-
 html
 {
     scroll-behavior: smooth;
@@ -24,6 +22,17 @@ img
 {
     text-align: center;
     font-weight: 500;
+}
+
+#nav-device
+{
+    background-color: #222222;
+    display: none;
+}
+
+.navbar #hamburger
+{
+    display: none;
 }
 
 .navbar
@@ -230,7 +239,6 @@ img
 }
 .sub
 {
-
     grid-column: 1/-1;
     padding: 5px;
     color: #008CBA;
@@ -303,18 +311,42 @@ img
 @media (max-width:768px)
 {
 
-    .navbar ul
+    .navbar #nav-web
     {
-        place-content: center end;
-        gap: 5px;
-        margin-right: 30px;
-        grid-template-columns: 50px 80px 50px;
+        display: none;
     }
 
+    .navbar
+    {
+        display: grid;
+    }
+
+    .navbar #hamburger
+    {
+        justify-self: end;
+        display: block;
+    }
+
+    #nav-device
+    {
+        margin: 0px -19.5px -16.5px -19.5px;
+        grid-column: 1/-1;
+    }
+
+    #nav-device li 
+    {
+        padding: 5px;
+        list-style: none;
+    }
+
+    #nav-device a
+    {
+        color: #fff;
+        text-decoration: none;
+    }
 
     #icon
     {
-        display: block;
         text-align: end;
         font-size: 1.2em;
     }
@@ -338,12 +370,12 @@ img
 @media (max-width:500px)
 {
 
-    .navbar ul
+    /* .navbar ul
     {
         place-content: center start;
         gap: 5px;
         grid-template-columns: 50px 80px 50px;
-    }
+    } */
 
     .header
     {

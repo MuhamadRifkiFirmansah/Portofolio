@@ -15,11 +15,18 @@
             <div class="navbar">
                 <h4 class="brand" data-aos="fade-right" data-aos-duration="2000"><a href="">M.Rifki Firmansah</a></h4>
                 <ul data-aos="fade-left" data-aos-duration="2000">
+                    <li id="nav-web" ><a href="#skill">Skill</a></li>
+                    <li id="nav-web"><a href="#project">Project</a></li>
+                    <li id="nav-web"><a href="#contact">Contact</a></li>
+                    <li id="hamburger"><a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i></a>
+                    </li>
+                </ul>
+                <div id="nav-device">
                     <li><a href="#skill">Skill</a></li>
                     <li><a href="#project">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
-                
+                </div>
             </div>
         </nav>
         <div class="header" data-aos="fade-up" data-aos-duration="3000">
@@ -31,7 +38,7 @@
                 <p>Nama saya Muhamad Rifki Firmansah,saya seorang front end & web developer,  saya dapat bertanggung jawab <br> dalam pekerjaan dan  sangat disiplin akan hal yang dikerjakan.  Saya memiliki pengetahuan tentang <br> HTML5,CSS3,Javascript,Bootstrap,PHP,Java sangat senang mempelajari hal baru.</p>
             </div>
         </div>
-
+        <!-- Skills -->
         <section class="skills" id="skill">
             <h2 class="title" data-aos="fade-right" data-aos-duration="2000">Skills</h2>
             <div class="box" data-aos="flip-left" data-aos-duration="1000">
@@ -84,7 +91,7 @@
                 </div>
             </div>
         </section>
-        
+         <!--Portofolio  -->
         <section class="portofolio" id="project">
             <h2 class="title-2" data-aos="fade-right" data-aos-duration="3000">My Project</h2>
             <div data-content="Chauffer" class="project" data-aos="fade-up" data-aos-duration="3000">
@@ -109,6 +116,7 @@
                 </div>
             </div>
         </section>
+        <!-- Contact -->
         <section class="contact" id="contact">
             <h2 class="title-2" data-aos="fade-right" data-aos-duration="3000">Contact</h2>
             <div data-aos="flip-left" data-aos-duration="3000" class="github">
@@ -128,6 +136,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
+        var x = document.getElementById('nav-device');
+        function hamburgerMenu(){
+            if(x.style.display == 'block'){
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }    
+        }
     </script>
 </body>
 </html>
