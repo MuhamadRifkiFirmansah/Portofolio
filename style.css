@@ -5,7 +5,7 @@ body
     font-family: 'Lato';
     padding: 0;
     font-family: 'Montserrat';
-    background: linear-gradient(#fff 50%,#222222 40%);
+    /* background: linear-gradient(#fff 40%,#222222 60%); */
 }
 
 html
@@ -124,7 +124,7 @@ img
     grid-column: 1/-1;
     text-align: center;
     padding: 5px;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
     color: #008CBA;
 }
 
@@ -147,6 +147,12 @@ img
     height: 150px;
 }
 
+.php{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .html img 
 {
     width: 240px;
@@ -155,7 +161,7 @@ img
 
 .php img
 {
-    width: 140px;
+    width: 50%;
 }
 
 .js img 
@@ -171,6 +177,7 @@ img
 
 .portofolio
 {
+    background: #222222;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     gap: 20px;
@@ -185,10 +192,19 @@ img
     position: relative;
 }
 
+.project img{
+    height: 100%;
+}
+
 .project::before
 {
     content: none;
     text-align: center;
+}
+
+.project:nth-child(6){
+    grid-column: 1/-1;
+    width: 50%;
 }
 
 .overlay
@@ -227,15 +243,18 @@ img
     text-decoration: none;
     color: #fff;
     background-color: #008CBA;
+    margin: 0 auto;
+    width: 10rem;
 }
 
 .contact
 {
-    margin-top: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     padding-left: 100px;
     padding-right: 100px;
+    background-color: #222222;
 }
 .sub
 {
@@ -284,7 +303,6 @@ img
 
 .footer
 {
-    margin-top: 40px;
     text-align: center;
     background-color: #008CBA;
     padding: 10px;
@@ -293,6 +311,10 @@ img
 #icon
 {
     display: none;
+}
+
+.border-bottom-white{
+    border-bottom: 1px solid #fff;
 }
 
 @media (max-width:1024px)
